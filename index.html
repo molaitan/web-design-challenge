@@ -19,14 +19,15 @@
             <!--Brand and toggle get grouped for better mobile display-->
             <div class="row">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" 
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                         <span class="sr-only"> Toggle Navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
                     <div class="col-xs-9 phone-nav">
-                        <a class="navbar-brand" href="index.html" id="logo"> Latitude</a>
+                        <a class="navbar-brand" href="#" id="logo"> Latitude</a>
                     </div>
                 </div>
                 
@@ -37,10 +38,10 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" 
                                 aria-expanded="false"> Plots <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="temp.html">Max Temperature</a></li>
-                                <li><a href="humidity.html">Humidity</a></li>
-                                <li><a href="cloudiness.html">Cloudiness</a></li>
-                                <li><a href="wind.html">Wind Speed</a></li>
+                             <li><a href="temp.html">Max Temperature</a></li>
+                             <li><a href="humidity.html">Humidity</a></li>
+                             <li><a href="cloudiness.html">Cloudiness</a></li>
+                             <li><a href="wind.html">Wind Speed</a></li>
                             </ul>
                         </li>
                         <li><a href="comparison.html">Comparison</a></li>
@@ -54,23 +55,23 @@
 
     <!--Start of container-->
     <div class = "container">
-        <div class = "row">
+        <section class = "row">
             <!--first column is for the summary-->
             <div class ="col-md-8">
                 <article class="description-content">
                     <h1 class="description-header"> Summary: Latitude vs. X</h1>
                     <hr class="description-hr"/>
-                <!--add the image and the content and then format-->
-                <a href="images/Fig1.png">
-                    <img src="images/Fig1.png" title="City Latitude Vs. Max Temp Plot"
-                id= "description-image">
-                </a>
+                    <!--add the image and the content and then format-->
+                    <a href="images/Fig1.png">
+                        <img src="images/Fig1.png" title="City Latitude Vs. Max Temp Plot"
+                                    id= "description-image">
+                    </a>
                     <p> The purpose of this project was to analyze how weather changes as you get closer to the equator.
-                    To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemple a dataset on over
+                    To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over
                     500 cities.
                     </p>
-                    <p> After pulliing the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked 
-                    at included: temparature, cloudiness, wind speed, and humidity. This site provides source data and visualizations 
+                    <p> After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked 
+                    at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations 
                     created as a part of the analysis, as well as explanations of trends and any other correlations witnessed.
                     </p>
                 </article>
@@ -78,32 +79,31 @@
 
             <!--second column is for the visualization thumbnails-->
             <div class="col-md-4">
+                <!--add the thumbnails for the images-->
                 <section id="imageNav-area">
                     <div class="imageNav-content">
                         <h2 class = "imageNav-header"> Visualizations</h2>
-                        <hr>
+                        <hr />
                         <div id="images">
-                            <a href="temp.html">
-                                <img src="images/Fig1.png" class="imageNav-photo" title="Latitude Vs. Max Temperature">
-                            </a>
-                            <a href="humdity.html">
-                                <img src="images/Fig2.png" class="imageNav-photo" title="Latitude Vs. Humidity">
-                            </a>
-                            <a href="cloudiness.html">
-                                <img src="images/Fig3.png" class="imageNav-photo" title="Latitude Vs. Cloudiness">
-                            </a>
-                            <a href="wind.html">
-                                <img src="images/Fig4.png" class="imageNav-photo" title="Latitude Vs. Wind Speed">
-                            </a>
+                            <div class="row" id="outer">
+                                <a href="temp.html">
+                                    <img src="images/Fig1.png" class="imageNav-photo" title="Latitude Vs. Max Temperature">
+                                </a>
+                                <a href="humdity.html">
+                                    <img src="images/Fig2.png" class="imageNav-photo" title="Latitude Vs. Humidity">
+                                </a>
+                                <a href="cloudiness.html">
+                                    <img src="images/Fig3.png" class="imageNav-photo" title="Latitude Vs. Cloudiness">
+                                </a>
+                                <a href="wind.html">
+                                    <img src="images/Fig4.png" class="imageNav-photo" title="Latitude Vs. Wind Speed">
+                                </a>
+                            </div>    
                         </div>
                     </div>
-
-
                 </section>
-                <!--add the thumbnails for the images-->
-
             </div>
-        </div>
+        </section>   
     </div>
     <!--End of container-->
     <!--Start of footer-->
